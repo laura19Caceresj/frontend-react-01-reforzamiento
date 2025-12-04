@@ -23,9 +23,9 @@ console.log(message, message2);
 
 
 
+//ejercicios practicos
 
-
-
+// funcion que retorna el nombre de una factura 
 function invoicename(id: number): string {
     return `factura_compra_${id}.pdf `;
 }
@@ -36,8 +36,6 @@ console.log(message3);
 
 
 // funcion de multiplicacion de dos numeros 
-
-
 const mul = (number1: number, number2: number): number => {
    const multiplicacion = number1*number2;
 
@@ -61,11 +59,14 @@ const user= getUser();
 console.log(user);
 
 
-//funcion flecha que retorna un objeto
- function getUser2(uid:number, username:string):string =>{
-    return `El uid es: ${uid} y el username es: ${username}`;
 
- }
 
- const user2= getUser2(77,'juan');
- console.log(user2);
+// tarea funcion flecha retornando objeto
+const task = (uid:string, username:string):string =>{
+    return `El id es ${uid} y el nombre es ${username}`;
+
+}
+
+ const result = task('abc-123','El_Papi1502');
+ console.log(result);
+
