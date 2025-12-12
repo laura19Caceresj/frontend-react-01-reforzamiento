@@ -9,6 +9,8 @@ import './style.css'
 //import './data/heroes.data.ts'
 import './bases/08-imp-exp.ts'
 
+//import {getHeroesByOwner} from './bases/08-imp-exp.ts'
+//import { Owner } from './data/heroes.data.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -16,3 +18,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
+
+//console.log(getHeroesByOwner(Owner.DC));

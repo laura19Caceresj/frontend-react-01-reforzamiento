@@ -7,7 +7,7 @@ owner: Owner;// Interfaz definoda abajo
 ///type Owner = 'DC' | 'Marvel';// interfaz que se definio tipos de datos para vaalores especificos
 
 //enumeraciones
-enum Owner{
+ export enum Owner{
     DC='DC',
     Marvel='Marvel'
 }
