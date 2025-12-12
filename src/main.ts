@@ -7,8 +7,9 @@ import './style.css'
 //import './bases/06-obj-destructuring'
 //import './bases/07-array-destructuring'
 //import './data/heroes.data.ts'
-import './bases/08-imp-exp.ts'
+//import './bases/08-imp-exp.ts'
 
+import './bases/09-promises.ts'
 //import {getHeroesByOwner} from './bases/08-imp-exp.ts'
 //import { Owner } from './data/heroes.data.ts'
 
