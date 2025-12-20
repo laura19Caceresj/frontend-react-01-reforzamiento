@@ -1,3 +1,4 @@
+import type { GiphyRandomResponse } from "../data/giphy.response";
 
 
 
@@ -11,20 +12,26 @@ const myRequest = fetch(
 
 
 
+const  createImageInsideDOM =(url:string )=> {
+
+        const imgElement = document.createElement('img');
+        imgElement.src=url;
+
+        document.body.append(imgElement);
+}
+
+
 
 myRequest
     .then((response) => response.json())
-    .then((data) => {
-        const imageUrl = data.data.images.original.url;
-        console.log(imageUrl);
+    .then(({data}:GiphyRandomResponse) => {
 
-        const imgElement = document.createElement('img');
-        imgElement.src=imageUrl;
-
-        document.body.append(imgElement);
+        const imageUrl = data.images.original.url; 
+        createImageInsideDOM(imageUrl);
+      
     })
     .catch((err) => {
         console.error(err);
-    });    
+    });
 
 
