@@ -14,6 +14,7 @@ for (const myNumber of myArray){
 
 
 
-const myArray2 =myArray;
+const myArray2 =[...myArray];
+
 myArray2.push(7);
 console.log({myArray, myArray2})
